@@ -1,0 +1,55 @@
+.profile {
+  background-color: $white;
+  border-radius: 16px;
+  padding: 16px;
+
+  @include e(image) {
+    border-radius: 16px;
+  }
+
+  @include e(image-wrapper) {
+    margin-bottom: 16px;
+  }
+  @include e(user) {
+    margin-bottom: 16px;
+  }
+
+  @include e(bio) {
+    margin-bottom: 16px;
+  }
+
+  @include e(info) {
+    color: #555;
+    font-size: 14px;
+  }
+
+  @include e(location) {
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+
+  @include e(name) {
+    margin-bottom: 8px;
+  }
+
+  @include e(user-name) {
+    color: #555;
+  }
+
+  @include e(follow-text) {
+    margin-right: 8px;
+
+    &::after {
+      content: "";
+      margin-left: 4px;
+      height: 4px;
+      width: 4px;
+      background-color: $black;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+
+}

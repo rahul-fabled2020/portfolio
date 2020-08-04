@@ -1,0 +1,12 @@
+.app {
+  background-color: $athens-gray;
+  min-height: 100vh;
+  
+  @include e(container) {
+    padding: 16px;
+  }
+
+  @include e(col) {
+    margin-bottom: 32px;
+  }
+}

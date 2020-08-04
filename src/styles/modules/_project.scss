@@ -1,0 +1,18 @@
+.project {
+  background-color: $white;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 32px;
+
+  @include e(heading) {
+    margin-bottom: 16px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  @include e(link) {
+    color: #555;
+  }
+}
