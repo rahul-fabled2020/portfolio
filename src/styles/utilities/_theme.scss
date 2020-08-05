@@ -1,44 +1,17 @@
 $themes: (
   color: (
-    default: (
+    dark: (
       body: #000000,
-      header-bg-left: #DD2476,
-      header-bg-right: #FF512F,
+      image-brightness: brightness(80%),
+      header-bg: #121212,
       header-font: #FFFFFF,
-      main-bg: #F5F5F5,
-      heading: #000000,
-      heading-underline-bold: #DF2771,
-      heading-underline-normal: #C7C7C7,
-      tree-bg: #525A96,
-      tree-border: #3543A9,
-      highlight: #DADADA,
-      pre-bg: #525A96,
-      pre-border: #3543A9,
-      pre-font: #FFFFFF,
-      box-bg: #F7CA18,
-      footer-bg: #DF2771,
-      snippet-bg: #ffffff,
-      select-bg: #df2771
-    ),
-    custom: (
-      body: #000000,
-      header-bg-left: #1B998B,
-      header-bg-right: #656176,
-      header-font: #FFFFFF,
-      main-bg: #FFFFFF,
+      main-bg: #000000,
       heading: #534D56,
-      heading-underline-bold: #1B998B,
-      heading-underline-normal: #656176,
-      tree-bg: #656176,
-      tree-border: #534D56,
-      highlight: #C2DFE3,
-      pre-bg: #656176,
-      pre-border: #534D56,
-      pre-font: #FFFFFF,
-      box-bg: #1B998B,
+      box-bg: lighten(#000, 30%),
+      primary-font: #ffffff,
+      secondary-font: darken(#fff, 20%),
+      tertiary-font: darken(#fff, 10%),
       footer-bg: #1B998B,
-      snippet-bg: #f5f5f5,
-      select-bg: #1B9988
     )
   ),
   size: (

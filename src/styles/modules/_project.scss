@@ -18,6 +18,14 @@
     @include hover {
       color: darken($color: #555, $amount: 30%);
     }
+
+    @include themify(theme-type(color)){
+      color: theme-property(tertiary-font);
+
+      @include hover {
+        color: theme-property(primary-font);
+      }
+    }
   }
 
   @include e(description) {
@@ -27,5 +35,10 @@
 
   @include e(btn) {
     margin-left: 8px;;
+  }
+
+  @include themify(theme-type(color)){
+    color: theme-property(tertiary-font);
+    background-color: theme-property(box-bg);
   }
 }

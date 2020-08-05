@@ -5,6 +5,10 @@
 
   @include e(image) {
     border-radius: 16px;
+
+    @include themify(theme-type(color)){
+      filter: theme-property(image-brightness);
+    }
   }
 
   @include e(image-wrapper) {
@@ -21,6 +25,10 @@
   @include e(info) {
     color: #555;
     font-size: 14px;
+
+    @include themify(theme-type(color)){
+      color: theme-property(secondary-font);
+    }
   }
 
   @include e(location) {
@@ -34,6 +42,10 @@
 
   @include e(user-name) {
     color: #555;
+
+    @include themify(theme-type(color)){
+      color: theme-property(secondary-font);
+    }
   }
 
   @include e(follow-text) {
@@ -48,6 +60,10 @@
       border-radius: 50%;
       display: inline-block;
       vertical-align: middle;
+
+      @include themify(theme-type(color)){
+        background-color: theme-property(primary-font);
+      }
     }
   }
 
@@ -56,6 +72,21 @@
     @include hover {
       color: darken($color: #555, $amount: 30%);
     }
+
+    @include themify(theme-type(color)){
+      color: theme-property(secondary-font);
+
+      @include hover {
+        color: theme-property(primary-font);
+      }
+    }
   }
 
+  @include themify(theme-type(color)){
+    background: theme-property(box-bg);
+  }
+
+  @include themify(theme-type(color)){
+    color: theme-property(primary-font);
+  }
 }

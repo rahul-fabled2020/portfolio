@@ -9,4 +9,8 @@
   @include e(col) {
     margin-bottom: 32px;
   }
+
+  @include themify(theme-type(color)){
+    background: theme-property(main-bg);
+  }
 }

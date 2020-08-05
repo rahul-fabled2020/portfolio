@@ -15,6 +15,16 @@
             color: $white;
             background-color: #555;
         }
+
+        @include themify(theme-type(color)){
+            color: theme-property(secondary-font);
+            background-color: theme-property(main-bg);
+
+            @include hover {
+                color: theme-property(main-bg);
+                background-color: theme-property(secondary-font);
+            }
+          }
     }
 
     @include m(secondary) {
