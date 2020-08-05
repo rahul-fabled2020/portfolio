@@ -7,9 +7,14 @@
     cursor: pointer;
 
     @include m(primary) {
-        border: 1px solid $valencia;
-        color: $valencia;
+        border: 1px solid #555;
+        color: #555;
         background: $white;
+
+        @include hover {
+            color: $white;
+            background-color: #555;
+        }
     }
 
     @include m(secondary) {

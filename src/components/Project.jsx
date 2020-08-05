@@ -33,7 +33,7 @@ function Project(props) {
         </a>
         {props.project.homepage && (
           <a
-            className="btn btn--primary"
+            className="btn btn--primary project__btn"
             href={props.project.homepage}
             title={props.project.name}
             target="_blank"

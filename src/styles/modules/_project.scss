@@ -20,4 +20,8 @@
     margin-bottom: 32px;
     text-align: justify;
   }
+
+  @include e(btn) {
+    margin-left: 8px;;
+  }
 }
