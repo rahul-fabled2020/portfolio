@@ -2,7 +2,7 @@ import * as apiActions from './../actions/apiActions';
 
 const INITIAL_STATE = {
   user: {},
-  repos: {},
+  repos: [],
 }
 
 function apiReducer(state = INITIAL_STATE, action) {

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import http from "./utils/http";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
+import Error from "./components/Error";
 
 class App extends React.Component {
   constructor(props) {
@@ -24,16 +25,15 @@ class App extends React.Component {
         this.props.fetchRepos(repoResponse);
         this.setState(() => ({ isLoading: false }));
       })
-      .catch((error) => this.setState(() => ({ error: error.message })));
+      .catch((error) => this.setState(() => ({ error: error.message, isLoading: false })));
   }
 
   render() {
-    if (this.state.error) return <div>Error: {this.state.error}</div>;
-    if (this.state.isLoading) return <div>Loading...</div>;
-
     return (
       <div className="app">
         <Header />
+        {this.state.isLoading && <div className="app__loading">Loading...</div>}
+        <Error message={this.state.error} />
         <div className="container app__container">
           <div className="row">
             <div className="col-md-4 app__col">
