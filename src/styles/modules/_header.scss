@@ -1,7 +1,11 @@
 .header {
-  background-color: #555;
+  background-color: darken($athens-gray, 30%);
   color: $white;
   padding: 32px 0;
+
+  @include e(heading) {
+    float: left;
+  }
 
   @include themify(theme-type(color)){
     color: theme-property(tertiary-font);
