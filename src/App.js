@@ -52,6 +52,7 @@ class App extends React.Component {
                         name: repo.name,
                         url: repo.html_url,
                         description: repo.description,
+                        homepage: repo.homepage,
                       }}
                     />
                   ))}
