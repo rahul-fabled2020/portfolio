@@ -23,10 +23,12 @@ function Profile(props) {
           <i className="fas fa-map-marker-alt"></i>&nbsp;&nbsp;
           {props.user.location}
         </div>
-        <div className="profile__twitter">
-          <i className="fab fa-twitter"></i>&nbsp;
-          {props.user.twitter_username}
-        </div>
+        {props.user.twitter_username && (
+          <div className="profile__twitter">
+            <i className="fab fa-twitter"></i>&nbsp;
+            {props.user.twitter_username}
+          </div>
+        )}
       </div>
     </div>
   );
