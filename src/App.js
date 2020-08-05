@@ -51,6 +51,7 @@ class App extends React.Component {
                       project={{
                         name: repo.name,
                         url: repo.html_url,
+                        description: repo.description,
                       }}
                     />
                   ))}
