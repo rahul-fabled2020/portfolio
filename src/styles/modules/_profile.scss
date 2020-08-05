@@ -51,5 +51,11 @@
     }
   }
 
+  @include e(link) {
+    color: #555;
+    @include hover {
+      color: darken($color: #555, $amount: 30%);
+    }
+  }
 
 }

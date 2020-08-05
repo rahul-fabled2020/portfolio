@@ -25,8 +25,10 @@ function Profile(props) {
         </div>
         {props.user.twitter_username && (
           <div className="profile__twitter">
-            <i className="fab fa-twitter"></i>&nbsp;
-            {props.user.twitter_username}
+            <a href={`https://twitter.com/${props.user.twitter_username}`} className="profile__link">
+              <i className="fab fa-twitter"></i>&nbsp;
+              {props.user.twitter_username}
+            </a>
           </div>
         )}
       </div>
