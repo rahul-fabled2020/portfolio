@@ -15,4 +15,8 @@
   @include e(link) {
     color: #555;
   }
+
+  @include e(description) {
+    text-align: justify;
+  }
 }
